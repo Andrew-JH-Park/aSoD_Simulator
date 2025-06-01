@@ -4,6 +4,10 @@ import pandas as pd
 from simulator.road_network import RoadNetwork
 from simulator.sav_simulator import ShuttleSim
 
+env_kwargs ={
+    'simulation_start_time': 7*3600
+}
+
 DEBUG = True
 BASE_DIR = os.curdir
 DATA_DIR = os.path.join(BASE_DIR, "data/episode_2019-09-17.csv")
@@ -34,6 +38,5 @@ def main():
 
 if __name__ == "__main__":
     from data_preprocess import DataLoader
-
     main()
 
